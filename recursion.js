@@ -19,3 +19,12 @@ function sumArrayValue(arr){
 
 let total = sumArrayValue(arr)
 console.log("total---->", total)
+
+function strReverse(str){
+    if(str.length==0){
+        return ''
+    }
+    return strReverse(str.slice(1)) + str[0]
+}
+
+console.log(strReverse("hello") )
